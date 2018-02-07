@@ -74,14 +74,14 @@ nav ul li {
 }
 
 }
-.svg#Layer_1 corgis {
+.svg Layer_1.corgis {
   display: block;
   margin-left: auto;
   margin-right: auto;
   float: right;
 }
-.corgis .corgi2 {
-  fill: currentColor;
+.corgi2 {
+  fill: #ba8058;
 }
 
 #container {
