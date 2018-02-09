@@ -7,37 +7,43 @@ body {
   color: #111;
   background: #edeff0;
 }
+
 body {
-    background-image: url("svgs/background.svg");
-    background-repeat: repeat;
+  background-image: url("svgs/background.svg");
+  background-repeat: repeat;
 }
+
 /* hide bullets on ul*/
+
 ul {
   list-style-type: none;
 }
+
 .st0 {
-transform-origin: 50% 50%;
- }
- nav ul li {
+  transform-origin: 50% 50%;
+}
+
+nav ul li {
   display: inline-block;
   margin-right: 20px;
 }
+
 ul li:hover a {
-  color:#000;
+  color: #000;
 }
- nav ul li a:hover,
- .heart-icon:hover .st0,
- .location:hover .st0,
- .contact:hover .st0 {
-   fill: #000;
-   transition: all ease 0.3s;
-   /*transition: transform .2s ease-in;*/
-   transform scale(.8);
- }
+
+nav ul li a:hover, .heart-icon:hover .st0, .location:hover .st0, .contact:hover .st0 {
+  fill: #000;
+  transition: all ease 0.3s;
+  /*transition: transform .2s ease-in;*/
+  transform scale(.8);
+}
+
 .icon {
   width: 20px;
   height: 20px;
 }
+
 .icon path.st0 {
   fill: #39add1;
 }
@@ -45,46 +51,71 @@ ul li:hover a {
 nav ul li {
   float: left;
   width: 10%;
- }
- .logo {
-   width: 140px;
-   height: 120px;
-   margin-top: 75px;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
- }
+}
+
+.logo {
+  width: 140px;
+  height: 120px;
+  margin-top: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.animate .st0 {
+  transition: transform: .5s ease-in-out;
+  transition-duration: .3s;
+  transform-origin: 50% 50%;
+}
+.st0:hover {
+  fill: #834b29;
+  transform: scale(1.1);
+}
 /*.logo st1 {
   fill: #BA8058;
-*/}
+*/
+
+}
+
 .logo path.st1 {
   opacity: 1;
 }
+
 .paw-print {
   opacity: 0;
 }
+
 @media (max-width: 425px) {
   .paw-print {
-  opacity: 1;
+    opacity: 1;
+  }
+  .logo path.st1 {
+    opacity: 0;
+    display: inline;
+  }
 }
 
-.logo path.st1 {
-  opacity: 0;
-  display: inline;
+.corgi1 {
+  color: #b97f5b;
 }
-
-}
-
 
 .corgi2 {
-  fill: #ba8058;
+  color: #e9aa82;
+}
+
+.corgi3 {
+  color: #834b29;
+}
+
+.corgi4 {
+  color: #52595e
 }
 
 #container {
   max-width: 960px;
   background: #fff;
   margin: 0 auto;
-  height: 100%; /* new line */
+  height: 100%;
+  /* new line */
 }
 
 p {
