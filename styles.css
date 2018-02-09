@@ -61,49 +61,47 @@ nav ul li {
   margin-left: auto;
   margin-right: auto;
 }
+
 .animate .st0 {
   transition: transform: .5s ease-in-out;
   transition-duration: .3s;
   transform-origin: 50% 50%;
 }
+
 .st0:hover {
   fill: #834b29;
   transform: scale(1.1);
 }
+
 @keyframes fadeIn {
-    0% {
-        opacity: .35;
-    }
-
-    50% {
-        opacity: .5;
-    }
-
-    75% {
-        opacity: .75;
-    }
-
-    100% {
-        opacity: .25;
-    }
+  0% {
+    opacity: .35;
+  }
+  50% {
+    opacity: .5;
+  }
+  75% {
+    opacity: .75;
+  }
+  100% {
+    opacity: .25;
+  }
 }
 
-
-
 .logo path.st1 {
-  opacity: 1;
+  opacity: 0;
 }
 
 .paw-print {
   opacity: 0;
 }
 
-@media (max-width: 425px) {
+@media (min-width: 425px) {
   .paw-print {
     opacity: 1;
   }
   .logo path.st1 {
-    opacity: 0;
+    opacity: 1;
     display: inline;
   }
 }
