@@ -70,11 +70,25 @@ nav ul li {
   fill: #834b29;
   transform: scale(1.1);
 }
-/*.logo st1 {
-  fill: #BA8058;
-*/
+@keyframes fadeIn {
+    0% {
+        opacity: .35;
+    }
 
+    50% {
+        opacity: .5;
+    }
+
+    75% {
+        opacity: .75;
+    }
+
+    100% {
+        opacity: .25;
+    }
 }
+
+
 
 .logo path.st1 {
   opacity: 1;
